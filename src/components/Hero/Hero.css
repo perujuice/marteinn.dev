@@ -37,9 +37,37 @@
   }
 }
 
+/* container for typewriter */
+.typewriter-container {
+  margin-top: 15px; /* spacing below h2 */
+  min-height: 2.5rem; /* prevents layout jump when deleting */
+}
+
+/* style the text */
+.Typewriter__wrapper {
+  font-size: 2em !important;
+  color: #be6adf !important;
+  font-weight: 600 !important;
+}
+
+.Typewriter__cursor {
+  font-size: 2em !important;
+  color: #b562d6 !important;
+}
+
+@media (max-width: 767px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-image img {
-    max-width: 200px;
+    max-width: 300px;
   }
 }
 
