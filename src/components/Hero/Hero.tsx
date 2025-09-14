@@ -1,5 +1,6 @@
 import './Hero.css'
 import Type from './Typer'
+import HeroImg from '../../assets/home-main.svg' // << import the asset
 
 function Hero() {
   return (
@@ -23,7 +24,7 @@ function Hero() {
         </div>
 
         <div className="col-md-5 text-center" style={{ paddingBottom: '20px' }}>
-          <img src="/src/assets/home-main.svg" alt="Hero" className="img-fluid w-100" />
+          <img src={HeroImg} alt="Hero" className="img-fluid w-100" />
         </div>
       </div>
     </section>
