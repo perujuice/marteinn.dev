@@ -71,3 +71,38 @@
   }
 }
 
+/* About Section of the Hero2 page */
+
+.home-about-description {
+  font-size: 1.2em;
+  color: aliceblue;
+  text-align: left;
+}
+
+.home-about-body {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.purple {
+  color: #be6adf;
+}
+
+/* Some fun animation for DATA SCIENCE text */
+
+.data-science {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #be6adf;
+  text-shadow: 0 0 5px #be6adf, 0 0 10px #be6adf;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px #be6adf, 0 0 10px #be6adf; }
+  50% { text-shadow: 0 0 15px #ff6adf, 0 0 30px #ff6adf; }
+  100% { text-shadow: 0 0 5px #be6adf, 0 0 10px #be6adf; }
+}
+
+
+
