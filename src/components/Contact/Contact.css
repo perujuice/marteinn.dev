@@ -1,0 +1,124 @@
+.contact-form {
+  background: #1e0718;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  color: #f8f9fa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  /* Center and limit width */
+  max-width: 600px;
+  margin: 2rem auto; /* auto = horizontally centered */
+}
+
+.contact-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #be6adf;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #ddd;
+}
+
+.contact-form .form-control {
+  background: #2a2a3b;
+  border: 1px solid #444;
+  color: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form .form-control:focus {
+  background: #2a2a3b;
+  border-color: #be6adf;
+  box-shadow: 0 0 8px rgba(190, 106, 223, 0.6);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #be6adf, #b562d6);
+  border: none;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #b562d6, #be6adf);
+  transform: scale(1.02);
+}
+
+/* Toast notification styles */
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 280px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  animation: slideIn 0.4s ease, fadeOut 0.4s ease 3.6s forwards;
+}
+
+.toast-message.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.toast-message.error {
+  background-color: #dc3545;
+  color: white;
+}
+
+.toast-message .close-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .toast-message {
+    right: 50%;
+    transform: translateX(50%); /* center horizontally */
+    min-width: 90%; /* almost full width */
+  }
+}

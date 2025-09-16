@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero'
 import Hero2 from './components/Hero/Hero2'
 import About from './components/About/About'
 import Projects from './components/Projects'
-import Contact from './components/Contact'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer'
 import Resume from './components/Resume'
 
