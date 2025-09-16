@@ -1,7 +1,8 @@
 import './Hero.css'
+import portraitImg from '../../assets/portrait.png' // << import the asset
 
 const Hero2 = () => (
-  <section className="hero-section container py-5">
+  <section className="hero-section hero2-spacer container">
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md-7 home-about-description">
@@ -31,7 +32,7 @@ const Hero2 = () => (
         </div>
         <div className="col-md-5 text-center">
           <img
-            src="/src/assets/react.svg" // Replace with your own image
+            src={portraitImg}
             alt="Marteinn"
             className="img-fluid rounded"
             style={{ maxHeight: "300px" }}

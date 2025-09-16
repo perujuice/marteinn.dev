@@ -1,0 +1,12 @@
+/* Purple button with hover effect */
+.purple-btn {
+  background-color: #a259e6 !important;
+  border-color: #a259e6 !important;
+  color: white !important;
+  transition: background 0.2s, border 0.2s;
+}
+.purple-btn:hover, .purple-btn:focus {
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+  color: white !important;
+}

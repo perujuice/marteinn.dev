@@ -1,5 +1,11 @@
+/* Extra top space before Hero2 section */
+.hero2-spacer {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
 .hero-section {
   color: aliceblue;
+  margin-top: 4rem;
 }
 
 .wave {
